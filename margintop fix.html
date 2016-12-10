@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: #aaa;
+            width: 200px;
+            height: 500px;
+/*            border: 1px solid; 給予外框就可以解決*/
+/*            overflow: hidden; 使用Overflow也可以解決*/
+/*
+            padding-top: 100px;
+            box-sizing: border-box;
+            padding-top與Box sizing一起使用
+*/
+        }
+        .box h1{
+/*            margin-top: 100px;  HTML BUG 子物件內margin top時會導致父物件一起往下掉*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>
+            qwerty
+        </h1>
+    </div>
+</body>
+</html>
