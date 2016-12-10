@@ -70,13 +70,13 @@
             margin-bottom: 20px;
             font-size: 26px;
         }
-        #service .wrapper .col_2::before{
+        /*置中說明文Part1*/#service .wrapper .col_2::before{
             content: "";
             display: inline-block;
             vertical-align: middle;
             height: 100%;
         }
-        .col_2 a {
+        /*More 連結按鈕*/.col_2 a {
         color: blue;
         display: inline-block;
         text-decoration: none;
@@ -130,6 +130,10 @@
             width: 150px;
             height: 100px;
             background-color: #bbb;
+            background-image: url(img/doge_logo.png)
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
         
         nav .menu {
@@ -159,7 +163,7 @@
         }
         
         header {
-            background-image: url(/img/doge.jpg);
+            background-image: url(img/doge.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -220,7 +224,7 @@
 <body>
     <nav class="full_width">
         <div class="fixed_width">
-            <div class="logo"><img src="/img/doge_logo.png" alt=""></div>
+            <div class="logo"></div>
             <div class="menu">
                 <ul>
                     <li><a href="#">Home</a></li>
