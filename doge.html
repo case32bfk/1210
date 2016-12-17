@@ -3,226 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Document</title>
     <script src="https://use.fontawesome.com/4504d09201.js"></script>
-    <style>
-        @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
-        @import url('https://fonts.googleapis.com/css?family=Roboto');
-        @import url(http://fonts.googleapis.com/earlyaccess/cwtexkai.css);
-        * {
-            font-family: "Roboto", "notosanstc";
-            color: white;
-        }
-        
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p {
-            margin: 0;
-            padding: 0;
-        }
-        
-        img {
-            width: 100%;
-            border: 0;
-            vertical-align: top;
-        }
-        
-        .primary {
-            /*主色調*/
-            background-color: #e83333;
-            color: aliceblue;
-        }
-        
-        .full_width {
-            /*滿版*/
-            width: 100%;
-        }
-        
-        .fixed_width {
-            /*設定頁面寬度*/
-            width: 1200px;
-            margin: auto;
-        }
-        
-        .col_4 {
-            /*設定四欄*/
-            width: 280px;
-            margin: 10px;
-            float: left;
-            text-align: center;
-        }
-        .col_2 {
-            width: 50%;
-            float: left;
-            height: 360px;
-            display: inline-block;
-            vertical-align: middle;
-            font-size: 0;
-        }
-        #service .wrapper .col_2 .content h3{
-            border-left: 5px solid #4f33e8;
-            padding-left: 20px;
-            margin-bottom: 20px;
-            font-size: 26px;
-        }
-        /*置中說明文Part1*/#service .wrapper .col_2::before{
-            content: "";
-            display: inline-block;
-            vertical-align: middle;
-            height: 100%;
-        }
-        /*More 連結按鈕*/.col_2 a {
-        color: blue;
-        display: inline-block;
-        text-decoration: none;
-        padding: 10px;
-        border: 1px solid blue;
-        margin-top: 20px;
-        }
-        #service .wrapper .col_2{
-        background-color: cadetblue;
-        }
-        #service .wrapper: .col_2::before{
-            content: "";
-            display: inline-block;
-            vertical-align: middle;
-            height: 100%;
-        }
-        #service .wrapper:nth-of-type(1) .col_2:nth-of-type(1) .content{
-            display: inline-block;
-            vertical-align: middle;
-            font-size: 16px;
-            padding-left: 100px;
-            padding-right: 30px;
-        }
-        #service .wrapper:nth-of-type(1) .col_2:nth-of-type(2){
-            background-image: url(img/YAY.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-        #service .wrapper:nth-of-type(2) .col_2:nth-of-type(1){
-            background-image: url(img/meme2.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-        #service .wrapper:nth-of-type(2) .col_2:nth-of-type(2) .content{
-            display: inline-block;
-            vertical-align: middle;
-            font-size: 16px;
-            padding-left: 30px;
-            padding-right: 100px;
-        }
-        .clearfix::after {
-            content: "";
-            display: block;
-            clear: both;
-        }
-        
-        nav .logo {
-            float: left;
-            width: 150px;
-            height: 100px;
-            background-color: #bbb;
-            background-image: url(img/doge_logo.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-        
-        nav .menu {
-            float: right;
-        }
-        
-        nav .menu ul {
-            margin: 0;
-            padding: 0;
-        }
-        
-        nav .menu li {
-            float: left;
-            list-style: none;
-        }
-        nav .menu li a{
-            color: aliceblue;
-        }
-        
-        nav .menu a {
-            display: block;
-            line-height: 100px;
-            margin-left: 30px;
-            text-decoration: none;
-            color: black;
-            font-size: 10px;
-        }
-        
-        header {
-            background-image: url(img/doge.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            padding-top: 280px;
-            padding-bottom: 280px;
-            text-align: center;
-        }
-        
-        header h1 {
-            font-size: 100px;
-        }
-        
-        header p {
-            font-size: 20px;
-        }
-        #about{
-            padding-top: 150px;
-            padding-bottom: 150px;
-        }
-        #about .title h2{
-            font-size: 40px;
-            text-align: center;
-            padding-top: 80px;
-            padding-bottom: 160px;
-            position: relative;
-        }
-        #about .col_4 h3{
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-        #about .col_4 p{
-            font-size: 14px
-        }
-        #about .icon{
-            font-size: 50px;
-            box-sizing: border-box;
-            width: 150px;
-            height: 150px;
-            background-color: rgba(255,255,255,.1);
-            display: inline-block;
-            line-height: 150px;
-            border-radius: 50%;/*圓角*/
-            border: 1px solid;
-            border-color: rgba(255,255,255,.5);
-        }
-        #about .title h2::before {
-            content: "Q";
-            position: absolute;
-            display: block;
-            width: 100%;
-            font-size: 200px;
-            top: -20px;
-            color: rgba(255, 185, 185, 0.25);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="phone.css">
 </head>
 
 <body>
-    <nav class="full_width">
+    <nav class="full_width">s
         <div class="fixed_width">
             <div class="logo"></div>
             <div class="menu">
@@ -249,50 +39,84 @@
             <h2>Qwerty Meme</h2></div>
         <div class="fixed_width">
             <div class="col_4">
-               <div class="icon"><span class="fa fa-gamepad"></span></div>
+                <div class="icon"><span class="fa fa-gamepad"></span></div>
                 <h3>I have a dream!</h3>
                 <p>Bow bow bow bow bow bow</p>
             </div>
             <div class="col_4">
-               <div class="icon"><span class="fa fa-hand-paper-o"></span></div>
+                <div class="icon"><span class="fa fa-hand-paper-o"></span></div>
                 <h3>You Shall Not Pass!!</h3>
                 <p>Bow bow bow bow bow bow</p>
             </div>
             <div class="col_4">
-               <div class="icon"><span class="fa fa-fighter-jet"></span></div>
+                <div class="icon"><span class="fa fa-fighter-jet"></span></div>
                 <h3>YES YES YES YES!!!</h3>
                 <p>Bow bow bow bow bow bow</p>
             </div>
             <div class="col_4">
-               <div class="icon"><span class="fa fa-volume-control-phone"></span></div>
+                <div class="icon"><span class="fa fa-volume-control-phone"></span></div>
                 <h3>His name is Jhon Cena!!!!</h3>
                 <p>Bow bow bow bow bow bow</p>
             </div>
         </div>
     </div>
-    <div id="service" class="full_width">
-       <div class="wrapper">
-       <div class="col_2">
-           <div class="content">
-               <h3>YAY</h3>
-               <p>Bow bow bow bow bow bow bow bow Bow bow bow bow bow bow bow bow</p>
-               <a href="#">Read more...</a>
-           </div>
-       </div>
-        <div class="col_2"></div>
+    <div id="service" class="full_width clearfix">
+        <div class="wrapper">
+            <div class="col_2">
+                <div class="content">
+                    <h3>YAY</h3>
+                    <p>Bow bow bow bow bow bow bow bow Bow bow bow bow bow bow bow bow</p>
+                    <a href="#">Read more...</a>
+                </div>
+            </div>
+            <div class="col_2"></div>
         </div>
-        
-       <div class="wrapper">
-       <div class="col_2"></div>
-        <div class="col_2">
-           <div class="content">
-               <h3>None</h3>
-               <p>Bow bow bow bow bow bow bow bow Bow bow bow bow bow bow bow bow</p>
-               <a href="#">Read more...</a>
-           </div>
-           </div>
+
+        <div class="wrapper">
+            <div class="col_2"></div>
+            <div class="col_2">
+                <div class="content">
+                    <h3>None</h3>
+                    <p>Bow bow bow bow bow bow bow bow Bow bow bow bow bow bow bow bow</p>
+                    <a href="#">Read more...</a>
+                </div>
+            </div>
         </div>
     </div>
+    <div id="work" class="full_width clearfix">
+        <div class="fixed_width">
+            <div class="title">
+                <h2>Fate GO</h2></div>
+            <p>wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww</p>
+        </div>
+        <div class="fixed_width clearfix">
+            <div class="col_4">
+                <img src="/img/jerbs.jpg" alt="">
+                <h3>they took er jerbs</h3>
+                <p>They Took Our Jobs, Took Errr Jerbs, dey turk err jurbz, theeey durrrka duuuuurrr, Durka Durrr. Check out the awesome They Took Our Jobs video below, from</p>
+            </div>
+            <div class="col_4">
+                <img src="/img/jerbs.jpg" alt="">
+                <h3>they took er jerbs</h3>
+                <p>They Took Our Jobs, Took Errr Jerbs, dey turk err jurbz, theeey durrrka duuuuurrr, Durka Durrr. Check out the awesome They Took Our Jobs video below, from</p>
+            </div>
+            <div class="col_4">
+                <img src="/img/jerbs.jpg" alt="">
+                <h3>they took er jerbs</h3>
+                <p>They Took Our Jobs, Took Errr Jerbs, dey turk err jurbz, theeey durrrka duuuuurrr, Durka Durrr. Check out the awesome They Took Our Jobs video below, from</p>
+            </div>
+            <div class="col_4">
+                <img src="/img/jerbs.jpg" alt="">
+                <h3>they took er jerbs</h3>
+                <p>They Took Our Jobs, Took Errr Jerbs, dey turk err jurbz, theeey durrrka duuuuurrr, Durka Durrr. Check out the awesome They Took Our Jobs video below, from</p>
+            </div>
+        </div>
+    </div>
+    <footer class="full_width clearfix">
+        <div class="fixed_width">
+            <p>Doge is God&copy;Got everything you want</p>
+        </div>
+    </footer>
 </body>
 
 </html>

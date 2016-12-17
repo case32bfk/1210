@@ -1,0 +1,43 @@
+ @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+ @import url('https://fonts.googleapis.com/css?family=Roboto');
+ @import url(http://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+ * {
+     font-family: "Roboto", "notosanstc";
+     color: white;
+     box-sizing: border-box;
+ }
+ 
+ body,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ img {
+     width: 100%;
+     border: 0;
+     vertical-align: top;
+ }
+ 
+ .primary {
+     /*主色調*/
+     background-color: #e83333;
+     color: aliceblue;
+ }
+ 
+ .full_width {
+     /*滿版*/
+     width: 100%;
+ }
+ 
+ .fixed_width {
+     /*設定頁面寬度*/
+     width: 1200px;
+     margin: auto;
+ }
